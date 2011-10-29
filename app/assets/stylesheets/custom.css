@@ -1,0 +1,177 @@
+@font-face {
+  font-family: mido;
+  src: url('mido.otf');
+}
+
+header {
+  width: 100%;
+  background-color: #B6C0D2;
+  height: 280px;
+}
+
+#top-header {
+  height: 180px;
+}
+
+#bottom-header {
+  height: 100px;
+  background: url(bar.gif);
+  position: relative;
+}
+
+header img {
+  padding: 1em;
+  background: #fff;
+}
+
+section {
+  font-family: "Helvetica";
+  color: #1C263C;
+  margin: auto;
+  width: 100%;
+  margin-top: 0em;
+  font-size: 120%;
+  background-color: #E0E4CC;
+}
+
+#content {
+  width: 100%;
+  margin: auto;
+  height: 800px;
+}
+
+#right-wrapper {
+  background-color: #5FA81E;
+  height: 100%;
+  width: 70%;
+  float: right;
+  height: 720px;
+}
+
+#right-content {
+  height: 600px;
+  padding: 50px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#left-content {
+  width: 28%;
+  float: left;
+}
+
+footer {
+  height: 80px;
+  background: url(bar.gif);
+}
+
+section h1 {
+  font-size: 200%;
+}
+
+.box {
+  border-width: 10px;
+  border-color: black;
+}
+
+/* Links */
+
+a {
+  color: white;
+  font-family: "Helvetica";
+  text-decoration: none;
+}
+
+.here a {
+  color: black;
+}
+
+#nav-wrapper {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+nav {
+  float: right;
+}
+
+nav {
+  white-space: nowrap;
+}
+
+nav ul {
+  margin-left: 0;
+  padding-left: 0;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  background-color: #5FA81E;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding: 10px 15px 5px;
+  list-style: none;
+  display: inline;
+  display: inline-block;
+}
+
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+/* Side Boxes */
+ 
+
+.box h1 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: mido;
+  color: #fd8e00;
+}
+
+.box p {
+  font-size: 15px;
+}
+
+.box img {
+  position:relative;
+  float:left;
+}
+
+ul.box {
+  padding: 3px 3px 3px 3px;
+}
+
+ul li.box {
+  background-color: #fff;
+  height:200px;
+  list-style: none;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #464646;
+  padding: 5px 5px 5px 5px;
+  margin: 12px 12px 12px 12px;
+}
+
+.here {
+  background-color: #FFF;
+  }
+
+.round {
+  -moz-border-radius-bottomright: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+div {
+  display: block;
+}
+

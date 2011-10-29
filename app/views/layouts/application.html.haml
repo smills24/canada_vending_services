@@ -1,0 +1,34 @@
+%html
+  %head
+    %title
+      = @title
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = stylesheet_link_tag 'blueprint/screen', :media => 'screen'
+    = stylesheet_link_tag 'blueprint/print',  :media => 'print'
+    = csrf_meta_tags
+%body
+  %header
+    #top-header
+    #bottom-header
+      #nav-wrapper
+        %nav.round
+          %ul
+            %li.round.here
+              = link_to 'HOME', '#'
+            %li.round
+              = link_to 'SERVICES', '#'
+            %li.round
+              = link_to 'PRODUCTS', '#'
+            %li.round
+              = link_to 'EQUIPMENT', '#'
+            %li.round
+              = link_to 'CONTACT', '#'
+  %section
+    #content
+      #left-content
+        = render :partial => "left"
+      #right-wrapper
+        #right-content
+          = yield
+  %footer
