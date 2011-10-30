@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def home
-    @title = "Canada Vending Services"
+    @title = "Home"
   end
 
   def contact 

@@ -41,9 +41,8 @@
         = render :partial => "left"
       #right-wrapper
         #right-content
-          %h2 
-            Canada Vending Services -
-            = @title
+          %h2 Canada Vending Services -
+          = @title
           = yield
   %footer
 
