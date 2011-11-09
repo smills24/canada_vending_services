@@ -50,10 +50,12 @@ CanadaVendingMachines::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'pages#home'
-  get 'pages/contact'
   get 'pages/products'
   get 'pages/services'
   get 'pages/equipment'
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  match 'contact' => 'contact#create', :as => 'contact', :via => :post
+
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
