@@ -42,7 +42,7 @@ h1.orange {
 
 .title {
   font-family: harbara;
-  font-size: 60px;
+  font-size: 50px;
   color: white;
   position:relative;
   top:50px;
@@ -102,7 +102,6 @@ section a {
 }
 
 #content-box {
-  height: 800px;
   width:50%;
   margin: auto;
   background:white;
