@@ -42,9 +42,9 @@ group :test do
   # Pretty printed test output
 	gem 'webrat'
   gem 'turn', :require => false
-  gem 'rspec-rails', '2.0.0.beta.20'
+  gem 'rspec-rails'
 end
 
 group :development do
-  gem 'rspec-rails', '2.0.0.beta.20'
+  gem 'rspec-rails'
 end
