@@ -1,7 +1,7 @@
 class Contact < ActionMailer::Base
 
   default :from => "web@canadavendingservices.com"
-  default :to => "stephmills24@gmail.com"
+  default :to => "info@canadavendingservices.com"
 
   def new_message(message)
     @email = message
