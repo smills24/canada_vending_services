@@ -147,6 +147,7 @@ DEPENDENCIES
   haml
   heroku
   jquery-rails
+  mail
   mysql2
   pg
   rails (= 3.1.1)

@@ -17,16 +17,16 @@
               = link_to 'HOME', root_path
             |
             %li
-              = link_to 'SERVICES', :controller => 'pages', :action => 'services'
+              = link_to 'SERVICES', 'services'
             |
             %li
-              = link_to 'PRODUCTS', :controller => 'pages', :action => 'products'
+              = link_to 'PRODUCTS', 'products'
             |
             %li
-              = link_to 'EQUIPMENT', :controller => 'pages', :action => 'equipment'
+              = link_to 'EQUIPMENT', 'equipment'
             |
             %li
-              = link_to 'CONTACT', :controller => 'pages', :action => 'contact'
+              = link_to 'CONTACT', :controller => 'contact', :action => 'new'
     #bottom-header
       .header_text
         %h1.head
@@ -39,6 +39,8 @@
         %h2 
           Canada Vending Services -
           = @title
+        - flash.each do |key, value|
+          %div{:class => "flash #{key}"}= value
         =yield
   %footer
 
