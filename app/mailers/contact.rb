@@ -4,7 +4,7 @@ class Contact < ActionMailer::Base
   default :to => "stephmills24@gmail.com"
 
   def new_message(message)
-    @message = message
+    @email = message
     mail(:subject => "New Vending Machine Request: #{message.subject}")
   end
 end

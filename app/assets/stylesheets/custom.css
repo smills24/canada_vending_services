@@ -248,3 +248,25 @@ div {
   display: block;
 }
 
+.flash {
+    text-align: center;
+    padding:    .3em .4em;
+    margin: auto;
+    clear:              both;
+    max-width:  46.923em; /* 610/13 */  
+    *max-width: 45.750em; /* 610/13.3333 - for IE */
+    width: 300px;
+}
+
+.flash.alert {
+    border: thin solid #8b0000;
+    background: #ffc0cb;
+}
+
+fieldset {
+  border:none;
+}
+
+fieldset textarea {
+  height: 100px;
+}

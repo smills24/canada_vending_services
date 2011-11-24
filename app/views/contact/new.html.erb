@@ -1,21 +1,21 @@
 <%= form_for @email, :url => contact_path do |form| %>
   <fieldset class="fields">
     <div class="field">
-      <%= form.label :name %>
+      <%= form.label :name %><br>
       <%= form.text_field :name %>
     </div>
     
     <div class="field">
-      <%= form.label :email %>
+      <%= form.label :email %><br>
       <%= form.text_field :email %>
     </div>
     <div class="field">
-      <%= form.label :subject %>
+      <%= form.label :subject %><br>
       <%= form.text_field :subject %>
     </div>
     
     <div class="field">
-      <%= form.label :body %>
+      <%= form.label :body %><br>
       <%= form.text_area :body %>
     </div>
   </fieldset>
