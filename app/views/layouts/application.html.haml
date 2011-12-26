@@ -8,31 +8,28 @@
 %body
   %header
     #top-header
-      = image_tag('logo.png', :height => '150')
-      .title Canada Vending Services 
-      #nav-wrapper
-        %nav.round
-          %ul.round
-            %li
-              = link_to 'HOME', root_path
-            |
-            %li
-              = link_to 'SERVICES', 'services'
-            |
-            %li
-              = link_to 'PRODUCTS', 'products'
-            |
-            %li
-              = link_to 'EQUIPMENT', 'equipment'
-            |
-            %li
-              = link_to 'CONTACT', :controller => 'contact', :action => 'new'
+      #header-container
+        #logo
+          = image_tag('logo.png', :height => '70')
+          .title Canada Vending Services 
+        #nav-wrapper
+          %nav.round
+            %ul.round
+              %li
+                = link_to 'HOME', root_path
+              |
+              %li
+                = link_to 'SERVICES', 'services'
+              |
+              %li
+                = link_to 'PRODUCTS', 'products'
+              |
+              %li
+                = link_to 'EQUIPMENT', 'equipment'
+              |
+              %li
+                = link_to 'CONTACT', :controller => 'contact', :action => 'new'
     #bottom-header
-      .header_text
-        %h1.head
-          We install, service and maintain VENDING MACHINES in your location for FREE.
-        %h1.orange
-          Satisfaction guaranteed!
   %section
     #content
       #content-box

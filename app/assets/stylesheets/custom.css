@@ -42,11 +42,12 @@ h1.orange {
 
 .title {
   font-family: harbara;
-  font-size: 42px;
+  font-size: 30px;
   color: white;
+  float:right;
   position:relative;
-  top:80px;
   left: -20px;
+  top: 30px;
 }
 
 .float_right {
@@ -60,12 +61,12 @@ h1.orange {
 
 header {
   width: 100%;
-  height: 300px;
+  height: 120px;
 }
 
 #top-header {
   background-color: #5196cd;
-  height: 200px;
+  height: 80px;
   margin: 0;
 }
 
@@ -76,10 +77,19 @@ header {
   margin: 10px;
 }
 
+#header-container {
+  margin: auto;
+  width: 80%;
+}
+
 #bottom-header {
-  height: 100px;
+  height: 40px;
   background: url(bar.gif);
   position: relative;
+}
+
+#logo {
+  width: 425px;
 }
 
 section {
@@ -106,7 +116,7 @@ section a {
 
 #content-box {
   min-height: 800px;
-  width:40%;
+  width:60%;
   margin: auto;
   background:white;
   border-style: solid;
@@ -188,8 +198,13 @@ nav {
 nav ul {
   display: inline;
   margin: 0;
-  padding: 15px 10px 10px 20px;
+  padding: 10px 5px 10px 5px;
   background-color: #99c729;
+}
+
+nav ul a {
+  font-family: harbara;
+  size: 20px;
 }
 
 nav ul li {

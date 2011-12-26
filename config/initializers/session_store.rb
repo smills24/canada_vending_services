@@ -1,6 +1,6 @@
 # Be sure to restart your server when you modify this file.
 
-CanadaVendingMachines::Application.config.session_store :cookie_store, key: '_canada_vending_machines_session'
+CanadaVendingMachines::Application.config.session_store :cookie_store, :key => '_canada_vending_machines_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
