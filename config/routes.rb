@@ -59,6 +59,8 @@ CanadaVendingMachines::Application.routes.draw do
   match 'equipment' => 'pages#equipment'
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
+  match 'login' => 'sessions#new'
+  match 'sessions' => 'sessions#create'
 
   # See how all your routes lay out with "rake routes"
 

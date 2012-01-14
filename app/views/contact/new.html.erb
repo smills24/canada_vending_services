@@ -1,25 +1,22 @@
 <%= form_for @email, :url => contact_path do |form| %>
   <fieldset class="fields">
     <div class="field">
-      <%= form.label :name %><br>
-      <%= form.text_field :name %>
-    </div>
-    
-    <div class="field">
-      <%= form.label :email %><br>
-      <%= form.text_field :email %>
+      <div><%= form.label :name %></div>
+      <div><%= form.text_field :name %></div>
     </div>
     <div class="field">
-      <%= form.label :subject %><br>
-      <%= form.text_field :subject %>
+      <div><%= form.label :email %></div>
+      <div><%= form.text_field :email %></div>
     </div>
-    
     <div class="field">
-      <%= form.label :body %><br>
-      <%= form.text_area :body %>
+      <div><%= form.label :subject %></div>
+      <div><%= form.text_field :subject %></div>
+    </div>
+    <div class="field">
+      <div><%= form.label :body %></div>
+      <div><%= form.text_area :body %></div>
     </div>
   </fieldset>
-  
   <fieldset class="actions">
     <%= form.submit "Send" %>
   </fieldset>

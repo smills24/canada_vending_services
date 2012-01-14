@@ -16,7 +16,10 @@
           %nav.round
             %ul.round
               %li
-                = link_to 'HOME', root_path
+                - if params[:user_id]
+                  = link_to 'ACCOUNT', user_path(params[:user_id])
+                - else
+                  = link_to 'LOGIN', login_path
               |
               %li
                 = link_to 'SERVICES', 'services'
@@ -34,7 +37,6 @@
     #content
       #content-box
         %h2 
-          Canada Vending Services -
           = @title
         - flash.each do |key, value|
           %div{:class => "flash #{key}"}= value

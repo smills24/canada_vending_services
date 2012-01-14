@@ -8,6 +8,7 @@ gem 'rails', '3.1.1'
 gem 'mysql2'
 gem 'haml'
 gem 'heroku'
+gem 'bcrypt-ruby'
 
 group :production do
 	gem 'pg'

@@ -1,2 +1,63 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<%= form_for(@user) do |f| %>
+<% if @user.errors.any? %>
+    <div class="errors">
+      <strong>The following errors prevented sign up:</strong>
+      <ul>
+        <% for message in @user.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <div class="label">
+      <%= f.label :first_name %>
+    </div>
+    <div class="text">
+      <%= f.text_field :first_name %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="label">
+      <%= f.label :last_name %>
+    </div>
+    <div class="text">
+      <%= f.text_field :last_name %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="label">
+      <%= f.label :email %>
+    </div>
+    <div class="text">
+      <%= f.text_field :email %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="label">
+      <%= f.label :phone %>
+    </div>
+    <div class="text">
+      <%= f.text_field :phone %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="label">
+      <%= f.label :password %>
+    </div>
+    <div class="text">
+      <%= f.password_field :password %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="label">
+      <%= f.label :password_confirmation, "Confirmation" %>
+    </div>
+    <div class="text">
+      <%= f.password_field :password_confirmation %>
+    </div>
+  </div>
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>

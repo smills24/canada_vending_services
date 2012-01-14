@@ -284,6 +284,29 @@ div {
     width: 300px;
 }
 
+.errors {
+    padding:    .3em .4em;
+    margin: auto;
+    clear:              both;
+    width: 400px;
+    border: thin solid #8b0000;
+    background: #ffc0cb;
+    color: darkred;
+    float:right;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+.field_with_errors input {
+  border-color:red;
+}
+
+.field br {
+  display: none;
+}
+
 .flash.alert {
     border: thin solid #8b0000;
     background: #ffc0cb;
