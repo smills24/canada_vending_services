@@ -312,6 +312,11 @@ div.field, div.actions {
     background: #ffc0cb;
 }
 
+.flash.notice {
+    border: thin solid green;
+    background: #7FFFD4;
+}
+
 fieldset {
   border:none;
 }

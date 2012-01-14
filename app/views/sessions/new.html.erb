@@ -1,11 +1,12 @@
 <%= form_tag sessions_path do %>
   <div class="field">
-    <div><%= label_tag :email %></div>
-    <div><%= text_field_tag :email, params[:email] %></div>
+    <%= label_tag :email %>
+    <%= text_field_tag :email, params[:email] %>
   </div>
   <div class="field">
-    <div><%= label_tag :password %></div>
-    <div><%= password_field_tag :password %></div>
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
   </div>
   <div class="actions"><%= submit_tag "Log in" %></div>
 <% end %>
+<p>New user? <%= link_to "Sign up now!", signup_path %></p>

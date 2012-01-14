@@ -45,6 +45,7 @@ group :test do
 	gem 'webrat'
   gem 'turn', :require => false
   gem 'rspec-rails'
+	gem 'factory_girl_rails', '1.0'
 end
 
 group :development do

@@ -16,22 +16,22 @@
           %nav.round
             %ul.round
               %li
-                - if params[:user_id]
-                  = link_to 'ACCOUNT', user_path(params[:user_id])
+                - if current_user
+                  = link_to 'ACCOUNT', user_path(current_user)
                 - else
                   = link_to 'LOGIN', login_path
               |
               %li
-                = link_to 'SERVICES', 'services'
+                = link_to 'SERVICES', services_path
               |
               %li
-                = link_to 'PRODUCTS', 'products'
+                = link_to 'PRODUCTS', products_path
               |
               %li
-                = link_to 'EQUIPMENT', 'equipment'
+                = link_to 'EQUIPMENT', equipment_path
               |
               %li
-                = link_to 'CONTACT', :controller => 'contact', :action => 'new'
+                = link_to 'CONTACT', contact_path
     #bottom-header
   %section
     #content

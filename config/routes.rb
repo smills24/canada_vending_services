@@ -2,8 +2,6 @@ CanadaVendingMachines::Application.routes.draw do
 
   resources :users
 
-  get "users/new"
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -60,7 +58,9 @@ CanadaVendingMachines::Application.routes.draw do
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
   match 'login' => 'sessions#new'
+  match 'logout' => 'sessions#destroy'
   match 'sessions' => 'sessions#create'
+  match 'signup' => 'users#new'
 
   # See how all your routes lay out with "rake routes"
 
